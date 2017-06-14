@@ -59,7 +59,7 @@ class MobileiaPush
     public function getElephant()
     {
         if($this->elephant === null){
-            $this->elephant = new \ElephantIO\Client(new ElephantIO\Engine\SocketIO\Version1X($this->getProcessUrl()));
+            $this->elephant = new \ElephantIO\Client(new \ElephantIO\Engine\SocketIO\Version2X($this->getProcessUrl()));
         }
         return $this->elephant;
     }
