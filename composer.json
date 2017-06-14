@@ -1,0 +1,31 @@
+{
+    "name": "mobileia/mia-push-zf3",
+    "description": "The library for MobileIA Push.",
+    "version": "0.0.1",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matias Camiletti",
+            "homepage": "http://www.mobileia.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/MobileIA/mia-push-zf3.git"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "wisembly/elephant.io": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "MIAPush\\": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}
